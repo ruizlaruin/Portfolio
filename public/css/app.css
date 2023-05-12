@@ -1,0 +1,193 @@
+/* Default styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: white;
+	color: black;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: yellow;
+	color: black;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+section {
+	max-width: 800px;
+	margin-bottom: 50px;
+	padding: 20px;
+	background-color: white;
+	border: 2px solid black;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+section ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+section li {
+	margin-bottom: 10px;
+}
+
+section li h3 {
+	margin-top: 0;
+}
+
+section p:last-child {
+	margin-bottom: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form label {
+	margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+form input[type="submit"] {
+	background-color: yellow;
+	color: black;
+	border: none;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	background-color: black;
+	color: white;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section {
+		max-width: 500px;
+	}
+}
+
+/* Dark mode styles */
+
+body.dark {
+	background-color: black;
+	color: white;
+}
+
+header.dark {
+	background-color: black;
+	color: white;
+}
+
+nav a.dark {
+	color: white;
+}
+
+main.dark {
+	background-color: black;
+}
+
+section.dark {
+	background-color: black;
+	border-color: yellow;
+	color: white;
+}
+
+section.dark h2 {
+	color: yellow;
+}
+
+section.dark li h3 {
+	color: yellow;
+}
+
+section.dark li {
+	border-bottom: 1px solid white;
+}
+
+form.dark input,
+form.dark textarea {
+	background-color: black;
+	color: white;
+	border-color: yellow;
+}
+
+form.dark input[type="submit"] {
+	background-color: yellow;
+	color: black;
+}
+
+footer.dark {
+	background-color: white;
+	color: black;
+}
